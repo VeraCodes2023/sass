@@ -1,0 +1,58 @@
+// footer starts
+
+footer{
+    width: 90%;
+    margin: auto;
+    padding: 100px 0;
+    div{
+        display: flex;
+        justify-content: space-between;
+        nav{
+            ul{
+                display: flex;
+                li{
+                    padding: 0 10px;
+                    position: relative;
+                    .dot{
+                        position: absolute;
+                        width: 6px;
+                        height: 6px;
+                        border-radius: 50%;
+                        right: 0px;
+                        top: 0;
+                        bottom: 22px;
+                        background-color: antiquewhite;
+                        opacity: 0;
+                        &:active{
+                            opacity: 1;
+                            background-color: #f7591b;
+                        }
+                    }
+                    a{
+                          color: white;
+                    }
+                    &:hover .dot{
+                        opacity: 0.9;
+                        background-color: #cfc8c5;
+                    }
+                  
+                }
+            }
+        }
+        .right{
+            display: flex;
+            li{
+                margin: 0 10px;
+                float: left;
+                &:hover i{
+                    color: #f7591b;
+                }
+            }
+        }
+    }
+    p{
+        margin-left: 10px;
+    }
+}
+
+// footer ends
